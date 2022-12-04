@@ -1,0 +1,79 @@
+$font-family_1: "Amaranth", sans-serif;
+$background-color_1: #edf3f8;
+
+.card{
+  * {
+		display: block;
+		box-sizing: border-box;
+	}
+	display: inline-block;
+	width: 100%;
+	max-width: 350px;
+  min-height: 130px;
+	margin: 20px;
+  padding: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-align: left;
+	background: #fff;
+	box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
+    .c-card {
+      &__title{
+        color: red;
+      }
+    }
+	}
+
+}
+
+.c-card {
+  &__image{
+    max-width: 100%;
+  }
+  &__icon{
+    max-width: 100%;
+  }
+  &__body{
+    padding: 5px;
+  }
+  &__title{
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    &:hover {
+      color: red;
+    }
+  }
+  &__content{
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  &__media{
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: inherit;
+
+    &-image{
+      margin: 20px;
+    }
+    &-left{
+    }
+    &-right{
+    }
+  }
+  &__footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+}
+
+
+
